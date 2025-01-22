@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'ClashGroteskSemibold';
+    src: url('../fonts/ClashGroteskSemibold.eot');
+    src: url('../fonts/ClashGroteskSemibold.eot') format('embedded-opentype'),
+         url('../fonts/ClashGroteskSemibold.woff2') format('woff2'),
+         url('../fonts/ClashGroteskSemibold.woff') format('woff'),
+         url('../fonts/ClashGroteskSemibold.ttf') format('truetype'),
+         url('../fonts/ClashGroteskSemibold.svg#ClashGroteskSemibold') format('svg');
+}
+
+/* Regular weight (font-weight: 400) */
+@font-face {
+    font-family: 'Formular';
+    src: url('fonts/formular-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Medium weight (font-weight: 500) */
+@font-face {
+    font-family: 'Formular';
+    src: url('fonts/formular-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style:normal;
+}
