@@ -2,7 +2,7 @@
 "use strict";
 
 // Specify the deadline date
-const deadlineDate = new Date('January 28, 2025 16:00:00').getTime();
+const deadlineDate = new Date('January 27, 2025 00:00:00').getTime();
 
 // Cache all countdown boxes into consts
 const countdownDays = document.querySelector('.countdown-days .number');
@@ -19,10 +19,10 @@ setInterval(() => {
   const distance = deadlineDate - currentDate;
 
   // Calculations the data for remaining days, hours, minutes and seconds
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+const hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
 
   // Insert the result data into individual countdown boxes
   if(countdownDays) {
