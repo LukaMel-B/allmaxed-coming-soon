@@ -1963,146 +1963,6 @@ blockquote {
     }
 }
 
-.pointer {
-    cursor: pointer;
-}
-
-.text-hide {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.slick-bullet .slick-dots li button::before {
-    display: none !important;
-}
-
-.slick-bullet .slick-dots {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-.slick-bullet .slick-dots li {
-    position: relative;
-    z-index: 1;
-    width: 10px;
-    display: inline-block;
-    height: 10px;
-}
-
-.slick-bullet .slick-dots li button {
-    border-radius: 50%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-.slick-bullet.deafult_style_dot .slick-dots li button {
-    overflow: hidden;
-    transition: background 0.3s;
-}
-
-.slick-bullet.deafult_style_dot .slick-dots li.slick-active {
-    width: 24px;
-}
-
-.slick-bullet.deafult_style_dot .slick-dots li.slick-active button {
-    border-radius: 32px;
-}
-
-.slick-bullet.dotstyle-fillup .slick-dots li button {
-    overflow: hidden;
-    background-color: transparent;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px inset;
-    transition: background 0.3s;
-}
-
-.slick-bullet.dotstyle-fillup .slick-dots li button::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    height: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgb(255, 255, 255) 0px 0px 1px;
-    transition: height 0.3s;
-    border-radius: 50%;
-}
-
-.slick-bullet.dotstyle-fillup .slick-dots li.slick-active button::after {
-    height: 100%;
-}
-
-.slick-bullet.dotstyle-scaleup .slick-dots li button {
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: 0.3s;
-}
-
-.slick-bullet.dotstyle-scaleup .slick-dots li.slick-active button {
-    transform: scale(1.2);
-    background-color: rgb(255, 255, 255);
-}
-
-.slick-bullet.dotstyle-stroke .slick-dots li button {
-    transition: box-shadow 0.3s, background-color 0.3s;
-    box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 2px;
-}
-
-.slick-bullet.dotstyle-stroke .slick-dots li.slick-active button {
-    background-color: transparent;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
-}
-
-.slick-bullet.dotstyle-fillin .slick-dots li button {
-    background-color: transparent;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px inset;
-    transition: box-shadow 0.3s;
-}
-
-.slick-bullet.dotstyle-fillin .slick-dots li.slick-active button {
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 8px inset;
-}
-
-.slick-bullet.dotstyle-dotstroke .slick-dots li {
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.slick-bullet.dotstyle-dotstroke .slick-dots li button {
-    transform: scale(0.4);
-    background-color: rgb(255, 255, 255);
-    transition: 0.3s;
-}
-
-.slick-bullet.dotstyle-dotstroke .slick-dots li.slick-active button {
-    transform: scale(1);
-}
-
-.slick-bullet.dotstyle-dotstroke2 .slick-dots li {
-    box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 2px;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.slick-bullet.dotstyle-dotstroke2 .slick-dots li button {
-    background-color: rgb(255, 255, 255);
-    transition: 0.3s;
-}
-
-.slick-bullet.dotstyle-dotstroke2 .slick-dots li.slick-active {
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
-}
-
-.slick-bullet.dotstyle-dotstroke2 .slick-dots li.slick-active button {
-    transform: scale(0.4);
-}
-
 #scrollUp {
     right: 30px;
     bottom: 30px;
@@ -4031,6 +3891,110 @@ h1.post__title {
     font-weight: 600;
     font-size: 21px;
     line-height: 30px;
+}
+   .sofax-countdown-content h2 {
+       font-size: 70px;
+       padding: 0 30px;
+       font-weight: 800;
+       /* Smaller heading size */
+       line-height: 82px;
+   }
+        .sofax-countdown-bottom-text p {
+            font-size: 25px;
+            letter-spacing: -2px;
+            padding: 0 60px;
+            /* Smaller text for bottom message */
+        }
+/* Mobile optimization */
+@media (max-width: 991px) {
+.sofax-countdown-item {
+        padding: 20px 40px;
+        /* Reduce padding inside items */
+        font-size: 50px;
+        /* Smaller font size */
+        line-height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .sofax-countdown-wrap {
+        gap: 16px;
+        /* Reduce spacing between countdown items */
+    }
+        .sofax-countdown-content {
+            margin-top: 50px !important;
+            padding-bottom: 0px !important;
+        }
+
+    .sofax-countdown-item {
+        padding: 20px 40px;
+        /* Reduce padding inside items */
+        font-size: 40px;
+        /* Smaller font size */
+        line-height: 60px;
+    }
+
+    .sofax-countdown-item p {
+        font-size: 16px;
+        font-weight: 700;
+        /* Smaller text for labels */
+        line-height: 24px;
+    }
+
+    .sofax-countdown-content h2 {
+        font-size: 50px;
+        padding: 0 30px;
+        font-weight: 800;
+        /* Smaller heading size */
+        line-height: 68px;
+    }
+
+    .sofax-countdown-bottom-text p {
+        font-size:25px;
+        letter-spacing: -2px;
+        padding: 0 60px;
+        /* Smaller text for bottom message */
+    }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+    .sofax-countdown-wrap {
+            gap: 16px;
+            /* Reduce spacing between countdown items */
+        }
+    
+        .sofax-countdown-content {
+            margin-top: 80px !important;
+            padding-bottom: 0px !important;
+        }
+    
+        .sofax-countdown-item {
+            padding: 15px 30px;
+            /* Reduce padding inside items */
+            font-size: 30px;
+            /* Smaller font size */
+            line-height: 50px;
+        }
+    
+        .sofax-countdown-item p {
+            font-size: 16px;
+            font-weight: 700;
+            /* Smaller text for labels */
+            line-height: 24px;
+        }
+    .sofax-countdown-content h2 {
+        font-size: 40px;
+        padding: 0 20px;
+        /* Adjust heading size */
+        line-height: 45px;
+    }
+
+    .sofax-countdown-bottom-text p {
+        font-size: 20px;
+        letter-spacing:-1.5px ;
+        padding: 0dvh;
+        /* Smaller text for bottom message */
+    }
 }
 
 .version-6 h2 {
@@ -9408,11 +9372,7 @@ button#sofax-submit-btn:hover {
     margin: 0px 24px 24px;
 }
 
-.wrapper {
-    width: 1000px;
-    margin: auto;
-    display: block;
-}
+
 
 .btn {
     text-transform: uppercase;
