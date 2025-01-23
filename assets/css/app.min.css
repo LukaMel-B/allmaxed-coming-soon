@@ -3894,11 +3894,11 @@ h1.post__title {
     line-height: 30px;
 }
    .sofax-countdown-content h2 {
-       font-size: 70px;
+       font-size: 90px;
        padding: 0 30px;
-       font-weight: 800;
+       font-weight: 600;
        /* Smaller heading size */
-       line-height: 82px;
+       line-height: 92px;
    }
         .sofax-countdown-bottom-text p {
             font-size: 22px;
@@ -3916,6 +3916,13 @@ h1.post__title {
         line-height: 60px;
     }
 }
+   .sofax-countdown-content h2 {
+       font-size: 70px;
+       padding: 0 30px;
+       font-weight: 800;
+       /* Smaller heading size */
+       line-height: 82px;
+   }
 @media (max-width: 768px) {
     .sofax-countdown-wrap {
         gap: 16px;
@@ -3946,7 +3953,7 @@ h1.post__title {
         padding: 0 30px;
         font-weight: 800;
         /* Smaller heading size */
-        line-height: 68px;
+        line-height: 62px;
     }
 
     .sofax-countdown-bottom-text p {
